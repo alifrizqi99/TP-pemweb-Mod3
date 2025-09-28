@@ -9,15 +9,20 @@
   <h1>Profil Pribadi</h1>
   <table>
     <tr>
+      <!-- th diguanakan untuk judul kolom -->
       <th>Foto Profil</th>
-      <th>Video Perkenalan</th>
-    </tr>
+      <th>Video</th>
+    </tr>  <!-- tr adalah baris dalam tabel   -->
     <tr>
-      <td>
+      <td>  <!-- td merupakan tabel data -->
+        <!-- img di gunakan untuk menambahkan gambar -->
         <img src="foto formal.jpg" alt=" " width="120px">
       </td>
       <td>
-        <video src=""></video>
+        <!-- video digunakan untuk menambahkan file mp4/video -->
+        <video controls height="250">
+          <source src="video.mp4">
+        </video> 
       </td>
     </tr>
   </table>
@@ -46,27 +51,31 @@
   <h1>
     Hubungi Saya
   </h1>
-  <div>
-    Nama:
-    <input type="text" name="nama">
-  </div>
-  <div>
-    Email:
-    <input type="email" name="email">
-  </div>
-  <div>
-    Pesan:
-    <br>
-    <textarea name="pesan"></textarea>
-  </div>
+  <form action="#"> <!-- form digunakan untuk wadah elemen input -->
+    <div>  <!-- div untuk membungkus elemen -->
+      Nama:
+      <input type="text" name="nama">  <!-- input digunakan untuk membuat teks singkatx -->
+    </div>
+    <div>
+      Email:
+      <input type="email" name="email">
+    </div>
+    <div>
+      Pesan:
+      <br>
+      <textarea name="pesan"></textarea>  <!-- textarea diguanakn untuk membuat teks panjang -->
+    </div>
+    <button type="submit">Kirim Pesan</button> <!-- button dipakai untuk membuat tombol -->
+  </form>
 
   <h1>Media Sosial</h1>
   <div>
+    <!-- A (anchor) digunakan untuk membungkus alamat URL -->
     <a href="https://id.linkedin.com/">LinkedIn</a>
     |
     <a href="https://github.com/alifrizqi99">GitHub</a>
     |
-    <a href="https://www.instagram.com/liffrzq/">instagram</a>
+    <a href="https://www.instagram.com/">Instagram</a>
   </div>
 </body>
 </html>
